@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
   background-color: #1d1c1c;
   color: #eee;
-  font-family: Monocraft, monospace;
+  font-family: 'Roboto', monospace;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   min-height: 100vh;
   margin: 0;
-  text-transform: lowercase; /* all text lowercase */
+  text-transform: lowercase;
 }
 
 .container {
