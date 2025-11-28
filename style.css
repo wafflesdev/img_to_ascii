@@ -6,17 +6,25 @@ body {
   font-family: 'Roboto', monospace;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
+  padding-bottom: 60px;
   min-height: 100vh;
   margin: 0;
   text-transform: lowercase;
+  padding-top: 40px;
 }
 
 .container {
   text-align: center;
   max-width: 900px;
   width: 100%;
+}
+
+#widthInput {
+  width: 80px;
+  font-size: 20px;
+  padding: 10px 12px;
 }
 
 input, button {
@@ -52,8 +60,44 @@ button:hover {
   padding: 15px;
   border-radius: 5px;
   overflow-x: auto;
-  line-height: 10px; 
-  font-size: 10px; 
+  line-height: 1;
+  font-size: 10px;
+  font-family: 'Courier New', monospace;
   margin-top: 10px;
   text-align: center;
+  font-kerning: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  padding: 6px;
+  text-align: center;
+  border-top: 1px solid #444;
+}
+
+.taskbar a {
+  color: #4caf50;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+.github-logo {
+  height: 50px;
+  width: 50px;
+  color: #eee;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.taskbar a:hover .github-logo {
+  transform: scale(1.1);
+  color: #4caf50;
 }
