@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ascii image converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ascii image converter</h1>
+
+    <input type="file" id="fileInput" accept="image/*"><br>
+    width: <input type="number" id="widthInput" value="100"><br>
+    <button id="generateBtn">generate ascii</button>
+    <button id="clearBtn">clear</button>
+
+    <h2>image preview</h2>
+    <img id="imagePreview" src="" alt="image preview" />
+
+    <h2>ascii output</h2>
+    <div id="ascii"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
