@@ -53,10 +53,15 @@ button:hover {
   padding: 15px;
   border-radius: 5px;
   overflow-x: auto;
-  line-height: 10px; 
-  font-size: 10px; 
+  line-height: 1;
+  font-size: 10px;
+  font-family: 'Courier New', monospace;
   margin-top: 10px;
   text-align: center;
+  font-kerning: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
 
   font-kerning: none;
   -webkit-font-smoothing: antialiased;

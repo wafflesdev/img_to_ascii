@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     currentImage.onload = function() {
       const canvas = document.createElement("canvas");
       const aspectRatio = currentImage.height / currentImage.width;
-      const newHeight = Math.floor(width * aspectRatio * 0.55);
+      const newHeight = Math.floor(width * aspectRatio * 0.8);
 
       canvas.width = width;
       canvas.height = newHeight;
