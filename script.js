@@ -76,6 +76,10 @@ document.addEventListener("DOMContentLoaded", function() {
   brightnessSlider.addEventListener("input", function() {
     const brightness = parseInt(brightnessSlider.value);
     brightnessValue.textContent = brightness;
-    imagePreview.style.filter = `brightness(${brightness}%)`;
+    const brightnessDecimal = brightness / 100;
+    const r = Math.round(29 * brightnessDecimal);
+    const g = Math.round(28 * brightnessDecimal);
+    const b = Math.round(28 * brightnessDecimal);
+    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   });
 });
