@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const widthInput = document.getElementById("widthInput");
   const asciiDiv = document.getElementById("ascii");
   const imagePreview = document.getElementById("imagePreview");
+  const brightnessSlider = document.getElementById("brightnessSlider");
+  const brightnessValue = document.getElementById("brightnessValue");
 
   let currentImage = null;
 
@@ -69,5 +71,11 @@ document.addEventListener("DOMContentLoaded", function() {
     imagePreview.src = "";
     asciiDiv.textContent = "";
     currentImage = null;
+  });
+
+  brightnessSlider.addEventListener("input", function() {
+    const brightness = parseInt(brightnessSlider.value);
+    brightnessValue.textContent = brightness;
+    imagePreview.style.filter = `brightness(${brightness}%)`;
   });
 });

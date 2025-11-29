@@ -80,6 +80,62 @@ button:hover {
   padding: 6px;
   text-align: center;
   border-top: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brightness-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.brightness-slider {
+  width: 100px;
+  height: 6px;
+  cursor: pointer;
+  appearance: none;
+  background: #444;
+  border-radius: 3px;
+  outline: none;
+  padding: 0;
+}
+
+.brightness-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.brightness-slider::-webkit-slider-thumb:hover {
+  background: #389b3d;
+}
+
+.brightness-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+
+.brightness-slider::-moz-range-thumb:hover {
+  background: #389b3d;
+}
+
+.brightness-value {
+  font-size: 12px;
+  color: #4caf50;
+  min-width: 25px;
+  text-align: right;
 }
 
 .taskbar a {
